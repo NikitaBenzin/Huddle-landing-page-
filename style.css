@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* colors */
+    --violet-100: hsl(300, 69%, 71%);
+    --violet-200: hsl(257, 40%, 49%);   
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-color: var(--violet-200);
+    height: 100%;
+    background-size: contain;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 3rem 0 1rem 0;
+}
+
+p{
+    color: rgb(231, 231, 231);
+    padding: 0 0.15rem 2rem 0.15rem;
+}
+picture > img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+}
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    padding: 3rem 0;
+}
+
+header > img{
+    height: 30.5px;
+}
+
+main{
+    min-height: calc(100vh - 220px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main > img{
+    width: 100%;
+}
+
+section > p{
+    line-height: 1.5rem;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+    color: var(--violet-200);
+    background-color: white;
+    border: none;
+    padding: 0.8rem 0rem;
+    border-radius: 1.8rem;
+    width: 65%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+button:hover{
+    background-color: var(--violet-100);
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.foot-svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.foot-svg:hover{
+    border: 1px solid var(--violet-100);
+}
+
+.foot-svg:hover path {
+    fill: var(--violet-100);
+}
+
+.foot-svg > svg{
+    height: 16px;
+    width: 16px;
+}
+
+@media (min-width: 992px) {
+    picture > img{
+        height: 100%;
+        width: auto;
+    }
+    .container{
+        max-width: 90%;
+    }
+    header > img{
+        height: 3rem;
+    }
+    main{
+        flex-direction: row;
+        text-align: left;
+    }
+    main > img {
+        max-width: 50%;
+    }
+    button{
+        width: 10rem;
+    }
+    h1{
+        font-size:35px;
+    }
+    section{
+        padding-left: 3rem;
+    }
+    section p{
+        max-width: 29rem;
+    }
+    p{
+        padding: 0 0.15rem 1rem 0.15rem;
+    }
+    footer{
+        justify-content: end;
+    }
+}
